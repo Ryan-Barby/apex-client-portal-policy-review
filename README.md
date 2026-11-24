@@ -38,7 +38,7 @@ This was a policy review exercise. No control-effectiveness testing or portal co
 | PR-05 | Backup and temporary-access follow-up responsibilities were not fully specified. | Expired elevated access might not be checked promptly. | Designate an authorised backup and record and check temporary-access expirations. |
 | PR-06 | No routine access-review requirement was specified. | Unnecessary or changed access might go unnoticed. | Conduct and record a monthly review of portal access against current roles and approved exceptions. |
 
-The full review table, with the reasoning behind each finding, is in [policy-review-findings](policy-review-findings.md).
+The full review table, with the reasoning behind each finding, is in [policy-review-findings](policy-review-findings).
 
 ## Repository contents
 
