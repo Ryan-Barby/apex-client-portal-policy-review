@@ -27,7 +27,7 @@ The project does not confirm that the portal enforces the proposed controls. The
 
 This was a policy review exercise. No control-effectiveness testing or portal configuration inspection was conducted.
 
-## Findings and proposed directions
+## Findings summary
 
 | ID | Policy gap | Why it matters | Proposed direction |
 |---|---|---|---|
@@ -38,25 +38,21 @@ This was a policy review exercise. No control-effectiveness testing or portal co
 | PR-05 | Backup and temporary-access follow-up responsibilities were not fully specified. | Expired elevated access might not be checked promptly. | Designate an authorised backup and record and check temporary-access expirations. |
 | PR-06 | No routine access-review requirement was specified. | Unnecessary or changed access might go unnoticed. | Conduct and record a monthly review of portal access against current roles and approved exceptions. |
 
-## Framework mapping
+The full review table, with the reasoning behind each finding, is in [policy-review-findings.md](policy-review-findings.md).
 
-This design-level mapping connects proposed policy directions to relevant framework topics. It is not a formal assessment or evidence of conformance.
+## Repository contents
 
-| Policy proposal | Framework reference | Relationship and limitation |
-|---|---|---|
-| Apply least privilege; approve access based on duties and need, with no self-approval. | NIST CSF 2.0 PR.AA-05 | Supports access control and review; policy wording alone does not prove technical enforcement. |
-| Document access levels per role and compare portal access to the table. | NIST CSF 2.0 PR.AA-05 | A supporting record, not proof that portal roles enforce the design. |
-| Set controls for temporary administrator access, including approval and expiry follow-up. | Essential Eight: Restrict Administrative Privileges | A policy-design recommendation; portal capabilities were not verified. |
-| Disable access on departure and review access after role changes. | NIST CSF 2.0 PR.AA-05 | A proposed process; no operational testing was performed. |
-| Conduct monthly access reviews and record outcomes. | NIST CSF 2.0 PR.AA-05 | A proposed cadence for this fictional scenario, not a framework-mandated frequency. |
+- [policy-review-findings.md](policy-review-findings.md) — the full review table (PR-01 to PR-06): the gaps identified in the draft policy, why each matters, and the proposed direction for each.
+- [revised-client-portal-access-policy.md](revised-client-portal-access-policy.md) — the consolidated revised policy drafted in response to the findings, including its open implementation items.
+- [framework-mapping.md](framework-mapping.md) — design-level mapping of the recommendations to NIST CSF 2.0 and the Essential Eight.
 
 ## Limitations and open design questions
 
 The draft policy did not identify the portal's permission capabilities. Before implementation, Apex would need to confirm whether the portal supports separate privileged accounts and timed expiry; define who approves and independently reviews the Practice Manager's own access; nominate an authorised backup and escalation approver; and decide how policy changes are verified and records are kept current.
 
-## Repository contents
+## Related project
 
-This README documents the review findings and proposed directions. The revised policy and supporting templates should be added only after their final versions have been reviewed and prepared for publication.
+- [mock-user-access-review](https://github.com/Ryan-Barby/mock-user-access-review) — a companion exercise using the same fictional scenario: a simulated review of Client Portal accounts against role and leaver rules.
 
 ## References
 
